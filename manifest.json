@@ -1,0 +1,76 @@
+{
+  "id": "./index.php",
+  "name": "Bijouterie Manager — Gestion de bijouterie",
+  "short_name": "Bijouterie",
+  "description": "Application privée de gestion d’inventaire, de rentabilité et de cours de l’or.",
+  "lang": "fr-CA",
+  "dir": "ltr",
+  "start_url": "./index.php",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#f5f6f2",
+  "theme_color": "#111916",
+  "categories": [
+    "business",
+    "finance",
+    "productivity"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Inventaire",
+      "short_name": "Inventaire",
+      "url": "./index.php?page=inventory",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Calculateur d’or",
+      "short_name": "Calculateur",
+      "url": "./index.php?page=goldcalc",
+      "icons": [
+        {
+          "src": "assets/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

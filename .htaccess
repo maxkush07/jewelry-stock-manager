@@ -1,0 +1,14 @@
+Options -Indexes
+<FilesMatch "^(install\.php|README\.md)$">
+  <IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+  </IfModule>
+</FilesMatch>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(storage|tests|includes)/ - [F,L]
+  RewriteRule \.(md|py)$ - [F,L]
+</IfModule>
+<FilesMatch "\.(sqlite|db|sql|log|md|py)$">
+  Require all denied
+</FilesMatch>
